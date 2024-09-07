@@ -4,6 +4,12 @@ SetWorkingDir, %A_ScriptDir%
 
 SetTitleMatchMode, 2
 
+; ini biar dia run as admin
+if (! A_IsAdmin) {
+	Run *RunAs "%A_ScriptFullPath%"
+	ExitApp
+}
+
 ; mengubah font dan ukuran string menjadi courier new dan ukuran 10
 ; contoh penggunaan misal di container source code di laprak
 ; cara pakai: block string yang ingin di format terus tinggal tekan F6
