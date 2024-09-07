@@ -12,7 +12,7 @@ if (! A_IsAdmin) {
 
 ; mengubah font dan ukuran string menjadi courier new dan ukuran 10
 ; contoh penggunaan misal di container source code di laprak
-; cara pakai: block string yang ingin di format terus tinggal tekan F6
+; cara pakai: buka microsoft word kemudian block string yang ingin di format terus tinggal tekan F6
 F6::
 Send, !hff
 Sleep, 10
